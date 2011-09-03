@@ -16,3 +16,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+%w{zsh screen nmap}.each do |package_name|
+  package package_name do
+    action :install
+  end
+end
